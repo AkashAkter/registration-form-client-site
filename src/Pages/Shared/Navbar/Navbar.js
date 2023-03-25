@@ -25,7 +25,9 @@ const Navbar = () => {
                     </ul> */}
                 </div>
                 <div className="navbar-end">
-                    <Link to='/registration'><button className="btn btn-outline hover:bg-[#ff4605]">Register Now</button></Link>
+                    <Link to='/registration'>
+                        <button className="btn btn-outline hover:bg-[#ff4605]">Register Now</button>
+                    </Link>
                 </div>
             </div>
 

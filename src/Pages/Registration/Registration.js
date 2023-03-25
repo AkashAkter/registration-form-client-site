@@ -2,13 +2,16 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import './Registration.css'
+import './Registration.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Registration = () => {
 
     const { register, handleSubmit } = useForm();
     const [data, setData] = useState("");
     console.log(data);
+
 
     const onSubmit = (data) => {
         fetch('http://localhost:5000/registeredStudent', {
@@ -21,7 +24,12 @@ const Registration = () => {
             .then(res => res.json())
             .then(data => {
                 setData(data);
-                console.log(data)
+                console.log(data);
+                // alert('DONE');
+                toast("Registration Complete!");
+                setTimeout(() => {
+                    window.location.href = '/complete';
+                }, 3000);
             })
     }
 
@@ -32,6 +40,22 @@ const Registration = () => {
                     <h1 className='text-center text-2xl font-bold'>Register Now...</h1>
                     <div className=''>
                         <form onSubmit={handleSubmit(onSubmit)}>
+
+                            <ToastContainer
+                                position="top-center"
+                                autoClose={2000}
+                                hideProgressBar={false}
+                                newestOnTop={false}
+                                closeOnClick
+                                rtl={false}
+                                pauseOnFocusLoss
+                                draggable
+                                pauseOnHover
+                                theme="light"
+                            />
+                            {/* Same as */}
+                            {/* <ToastContainer /> */}
+
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
                                     <span className="label-text font-medium">Name</span>
@@ -68,7 +92,9 @@ const Registration = () => {
                             </div>
 
                             <div className='my-4'>
-                                <button className="btn btn-block btn-outline hover:bg-[#ff4605] font-bold">Register Now</button>
+                                <button className="btn btn-block btn-outline hover:bg-[#ff4605] font-bold">
+                                    Register Now
+                                </button>
                             </div>
 
 
