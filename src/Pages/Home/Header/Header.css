@@ -8,12 +8,18 @@
 
 
 .sand-to-blue {
-    background-image: linear-gradient(to right bottom, #5f4754, #5d4759, #59475e, #534963, #4b4a67, #434e6b, #3b516d, #32556e, #2c5a6d, #2b5f6b, #2f6367, #376663);
+    background-image: linear-gradient(to right top, #b4a3be, #a18baf, #8f739f, #7d5c90, #6b4581, #694380, #68407f, #663e7e, #74508a, #836197, #9174a3, #a086b0);
 }
 
 .style {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.text-shadow {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Alkatra', cursive;
+}
+
 
 .banner-title {
     font-family: "Dosis", sans-serif;

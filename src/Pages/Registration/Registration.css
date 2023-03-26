@@ -5,8 +5,12 @@
     width: auto;
     justify-content: center;
     align-items: center;
-    background: url('https://cdn.wallpapersafari.com/89/24/l91CiX.jpg');
+    background-image: linear-gradient(to right top, #0a0010, #110819, #140f21, #15152a, #151a34, #1b2a46, #223b58, #284c69, #426f85, #6392a1, #89b7bc, #b3dcd9);
     background-size: cover;
+}
+
+.backgrond {
+    background-image: linear-gradient(to right top, #b4a3be, #a599b6, #9690ae, #8686a5, #767d9c, #7282a0, #6f87a4, #6c8ca6, #78a0b4, #88b4c1, #9cc8cd, #b3dcd9);
 }
 
 .form-section {

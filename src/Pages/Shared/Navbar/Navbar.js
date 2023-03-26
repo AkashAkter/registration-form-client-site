@@ -17,7 +17,7 @@ const Navbar = () => {
                             {menuItems}
                         </ul>
                     </div> */}
-                    <a href='/' className="btn btn-ghost hover:border hover:border-[#ff4605] hover:bg-white normal-case font-extrabold  text-2xl">PUB <span className='text-[#ff4605]'>Alumni</span></a>
+                    <a href='/' className="btn btn-ghost hover:border hover:border-[#B4A3BE] hover:bg-white normal-case font-extrabold  text-2xl">PUB <span className='text-[#B4A3BE]'>Alumni</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     {/* <ul className="menu menu-horizontal p-0">
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to='/registration'>
-                        <button className="btn btn-outline hover:bg-[#ff4605]">Register Now</button>
+                        <button className="btn btn-outline hover:bg-[#B4A3BE]">Register Now</button>
                     </Link>
                 </div>
             </div>
